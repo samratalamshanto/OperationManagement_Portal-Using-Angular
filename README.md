@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 # OmPortal
 
@@ -31,8 +30,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 # OM_PORTAL
 
-> > > > > > > # d02c743914435ddf2673d29c7ae5511542fe3fcc
+
 
 # OperationManagement_Portal-Using-Angular
-
-> > > > > > > 56aaf939e07e8aec7beb4de9665e48731b1104ad
