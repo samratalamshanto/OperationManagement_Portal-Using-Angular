@@ -1,0 +1,87 @@
+.cases-header {
+  /* height: 10%; */
+  width: 100%;
+}
+.cases-main-div {
+  margin-top: 0%;
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: space-between;
+
+  /* background-color: aquamarine; */
+}
+
+.side-bar {
+  height: 100%;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(120deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.sub-side-bar {
+  /* border: 2px solid rgb(245, 87, 87); */
+  border-right: 2px solid rgb(140, 140, 140);
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.sidebar-headline {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 4%;
+  text-align: center;
+}
+.side-bar button {
+  border: 1.25px solid black;
+  width: 90%;
+  height: 30px;
+  margin: 2%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1%;
+  background-color: linear-gradient(120deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -2px -2px 4px #ffffff;
+  background-color: rgb(237, 237, 237);
+}
+
+.component-main-div {
+  width: 70%;
+  height: inherit cases-main-div;
+  background: white;
+  border-left: 2px solid rgb(140, 140, 140);
+  background-color: linear-gradient(120deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.child button {
+  background-color: aliceblue;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.child-button {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
+
+.child-button p {
+}

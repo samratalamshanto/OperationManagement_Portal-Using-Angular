@@ -1,0 +1,35 @@
+<div class="cases-header">
+  <app-navbar></app-navbar>
+</div>
+<div class="cases-main-div d-flex-row main-div">
+  <div class="side-bar">
+    <div class="container-fluid sub-side-bar">
+      <div class="sidebar-headline container text-uppercase">
+        <fa-icon [icon]="caseTitleIcon"></fa-icon> Cases
+      </div>
+      <div class="child" *ngFor="let child of listChildData">
+        <button class="btn_shadow child-button" (click)="onClick(child.id)">
+          <ng-template [ngIf]="iconInChildComponentUrl === child.url">
+            <fa-icon
+              class="icon-arrow fa-lg"
+              [icon]="childComponentArrowIcon"
+            ></fa-icon
+          ></ng-template>
+          <p>{{ child.case }}</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="component-main-div">
+    <div class="container">
+      <app-case-common-component
+        [childData]="childData"
+        [fileInputBool]="fileInputBool"
+        [textInputBool]="textInputBool"
+      ></app-case-common-component>
+    </div>
+  </div>
+</div>
+<div class="mt-0 footer">
+  <app-footer></app-footer>
+</div>

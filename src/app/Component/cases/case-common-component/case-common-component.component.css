@@ -1,0 +1,51 @@
+.full-div {
+}
+.headline-div {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.headline-div button {
+  background-color: aliceblue;
+  border: 2px solid black;
+}
+.text-data {
+  background-color: aliceblue;
+}
+.file-data {
+  background-color: aliceblue;
+}
+.text-data-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4%;
+}
+
+.text-data-response {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.form {
+  margin-bottom: 4%;
+}
+.form-button button {
+  /* margin-top: 20px; */
+  margin-left: 10%;
+}
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input,
+button {
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+input {
+  border: 1px solid black;
+}
+.invalid-msg {
+  margin-top: -2%;
+}

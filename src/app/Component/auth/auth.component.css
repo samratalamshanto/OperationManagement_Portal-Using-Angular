@@ -1,0 +1,70 @@
+.auth-upper img {
+  width: 50%;
+  height: 50%;
+}
+
+.login-card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(239, 235, 235);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-shadow {
+  padding: 8px 0px;
+  border-radius: 10px;
+  border: 1px solid rgb(223, 220, 220);
+  color: black;
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.shadow {
+  padding: auto;
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+
+.row label {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+button {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.welcome-text p {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.auth-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 15px 0px 5px 0px;
+  margin-left: 8px;
+}
+
+.auth-upper h1 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(244, 5, 5);
+  letter-spacing: 1px;
+}

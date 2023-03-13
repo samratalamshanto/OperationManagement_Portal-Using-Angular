@@ -1,0 +1,54 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light navbar-div"
+  style="background-color: #fa3030"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand mx-4" style="" href="/cases"
+      ><fa-icon [icon]="houseIcon"></fa-icon> Robi OM Portal</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse mx-2"
+      id="navbarSupportedContent"
+      [ngbCollapse]="isCollapsed"
+    >
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div *ngFor="let component of navbarComponentList; let i = index">
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link"
+                aria-current="page"
+                routerLink="{{ component.href }}"
+                ><fa-icon [icon]="navbarComponentList[i].iconName"></fa-icon>
+                {{ component.componentName }}
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div>
+        <button class="me-auto mb-2 mb-lg-0">
+          <a routerLink="/profile">
+            <fa-icon [icon]="userIcon"></fa-icon> {{ userName }}</a
+          >
+        </button>
+        <button class="me-auto mb-2 mb-lg-0 mx-4" (click)="logout()">
+          <fa-icon [icon]="logoutIcon"></fa-icon>Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

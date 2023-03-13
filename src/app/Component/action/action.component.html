@@ -1,0 +1,19 @@
+<div class="">
+  <app-navbar></app-navbar>
+</div>
+<div>
+  <ng-template [ngIf]="actionPerformEligible">
+    <h1 class="text-center my-5">
+      <p>Action !</p>
+    </h1>
+  </ng-template>
+
+  <ng-template [ngIf]="actionPerformEligible">
+    <h1 class="text-center my-5">
+      <p style="color: red">You are not eligible to perform actions!!!!</p>
+    </h1>
+  </ng-template>
+</div>
+<div class="cases-footer">
+  <app-footer></app-footer>
+</div>

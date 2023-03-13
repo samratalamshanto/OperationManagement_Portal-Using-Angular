@@ -1,0 +1,12 @@
+.title-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.table-title {
+  font-weight: 700;
+  width: fit-content;
+  text-align: center;
+  border: 1px solid black;
+}

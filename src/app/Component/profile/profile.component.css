@@ -1,0 +1,58 @@
+.navbar-div {
+  height: 11%;
+  width: 100%;
+}
+.profile-main-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sub-div {
+  width: 35%;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid rgb(238, 231, 231);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(120deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+
+  justify-content: center;
+  align-items: center;
+}
+.sub-div h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sub-div {
+  font-weight: 700;
+}
+.btn {
+  padding-left: 1%;
+}
+.sub-div button {
+  cursor: default;
+  border: none;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sub-div-row {
+  padding: 1%;
+  margin: 1%;
+  padding-left: 3%;
+  width: 100%;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(120deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}

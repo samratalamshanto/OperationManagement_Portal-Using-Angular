@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="container-fluid d-flex-col my-3">
+    <div class="headline-div p-1">
+      <button class="headline-div btn_shadows">{{ childData.case }}</button>
+      <!-- {{ childData.case }} -->
+    </div>
+    <div class="my-1"></div>
+    <div class="text-data btn_shadow m-2 d-flex-col" *ngIf="textInputBool">
+      <div class="text-data-title">
+        <fa-icon [icon]="titleIcon"></fa-icon> {{ childData.title }}
+      </div>
+      <div class="d-flex-col">
+        <div class="form">
+          <form [formGroup]="formMsisdn" (submit)="onSubmitMsisdn()">
+            <div class="d-flex-row">
+              <div class="form-group">
+                <!-- <label for="exampleInputEmail1">Enter Msisdn</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="{{ childData.title }}"
+                  formControlName="msisdn"
+                />
+              </div>
+
+              <div class="form-button d-flex-row">
+                <button
+                  class="btn btn-primary d-flex-row"
+                  type="submit"
+                  [disabled]="msisdn?.invalid"
+                >
+                  <fa-icon class="mx-1" [icon]="uploadIcon"></fa-icon>
+                  {{ childData.buttonData }}
+                </button>
+                <button
+                  class="btn btn-primary d-flex-row"
+                  (click)="resetMsisdn()"
+                  [disabled]="msisdn?.invalid"
+                >
+                  <fa-icon class="mx-1" [icon]="resetIcon"></fa-icon> Reset
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="invalid-msg" *ngIf="msisdn?.invalid && msisdn?.touched">
+          <p class="" style="color: red; font-size: larger; font-weight: bold">
+            This MSISDN number is not valid!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="text-data-response" *ngIf="responseTextDivShowBool">
+        <fa-icon [icon]="responseIcon"></fa-icon> Response:
+        <ng-template [ngIf]="responseLoadingBoolText === true">
+          <span style="color: red">
+            Processing....Please wait for the response....</span
+          ></ng-template
+        >
+        <ng-template [ngIf]="responseLoadingBoolText === false">
+          <span> {{ responseMsgText }}</span></ng-template
+        >
+      </div>
+    </div>
+    <div class="my-2" *ngIf="textInputBool"></div>
+    <div class="file-data btn_shadow m-2" *ngIf="fileInputBool">
+      <div class="text-data-title">
+        <fa-icon [icon]="titleIcon"></fa-icon> {{ childData.title }} (BULK)
+      </div>
+      <div class="d-flex-row">
+        <div class="form">
+          <form (submit)="onSubmitFile()" [formGroup]="fileData">
+            <div class="d-flex-row">
+              <div class="form-group">
+                <!-- <label for="exampleInputEmail1">Choose Excel File</label> -->
+                <input
+                  type="file"
+                  class="form-control"
+                  accept=".xlsx"
+                  (change)="onEvent($event)"
+                  formControlName="files"
+                />
+              </div>
+              <div class="form-button d-flex-row">
+                <button
+                  class="btn btn-primary d-flex-row"
+                  type="submit"
+                  [disabled]="fileUploadButtonDisableBool"
+                >
+                  <fa-icon class="mx-1" [icon]="uploadIcon"></fa-icon> Upload
+                </button>
+                <button
+                  class="btn btn-primary d-flex-row"
+                  (click)="clearFile()"
+                  [disabled]="fileUploadButtonDisableBool"
+                >
+                  <fa-icon class="mx-1" [icon]="resetIcon"></fa-icon> Reset
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-data-response" *ngIf="responseFileDivShowBool">
+        <!-- <fa-icon [icon]="responseIcon"></fa-icon>  -->
+        <fa-icon [icon]="responseIcon"></fa-icon> Response:
+
+        <ng-template [ngIf]="responseLoadingBoolFile === true">
+          <span style="color: red">
+            Processing....Please wait for the response....</span
+          ></ng-template
+        >
+        <ng-template [ngIf]="responseLoadingBoolFile === false">
+          <span> {{ responseMsgFile }}</span></ng-template
+        >
+      </div>
+    </div>
+  </div>
+</div>
