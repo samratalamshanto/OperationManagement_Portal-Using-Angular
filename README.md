@@ -1,8 +1,7 @@
 
 
 # OmPortal
-# Portal Video Drive Link: https://drive.google.com/file/d/1OHCkdu1jDoozuDhmQdqOsm3ng1PFzDKI/view?usp=share_link
-# Portal Overview Video: https://youtu.be/cCT8CNBlSoE
+# Portal Video File: om_portal_overview.mp4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
